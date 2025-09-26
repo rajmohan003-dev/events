@@ -69,7 +69,7 @@ public class SimpleTest {
             GetEventPropertiesResponse props = eventPort.getEventProperties(new GetEventProperties());
 
             System.out.println("Supported Topics:");
-            System.out.println();
+
             printTopics(props.getTopicSet().getAny(),"");
         } catch (Throwable th) {System.err.println("Error on device: " + k);
           th.printStackTrace();
